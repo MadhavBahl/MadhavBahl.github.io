@@ -1,0 +1,128 @@
+.home-container {
+    background: linear-gradient(39.97deg, #03d6f3 0.79%, #458ff6 79.29%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 100px 10%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-text > h1 {
+    /* Headline */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3em;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.header-text > p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #e5e5e5;
+    margin: 10px;
+}
+
+.head-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 35px 10px 35px 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 36px;
+    height: 52px;
+    left: 0px;
+    top: 0px;
+    text-decoration: none;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    border-radius: 39px;
+    margin: 4px;
+}
+
+.btn-white {
+    background: #ffffff;
+    color: #112d57;
+}
+
+.btn-transparent {
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 39px;
+    color: #fff;
+}
+
+.btn:hover {
+    box-shadow: 1px 10px 32px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.splash-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_anime {
+    margin-bottom: -80px;
+}
+
+/* For large screen size */
+/* @media only screen and (min-height: 925px) and (min-width: 1400px) {
+    .home-container {
+        min-height: 100vh;
+        padding: 0;
+    }
+} */
+
+/* For small height screens */
+@media only screen and (max-height: 550px) {
+    .home_anime {
+        width: 400px;
+    }
+}
+
+/* For small width screens */
+@media only screen and (max-width: 640px) {
+    .home_anime {
+        width: 80%;
+        align-self: center;
+        margin-bottom: -20px;
+    }
+
+    .head-btns {
+        margin: 10px 10px 35px 10px;
+    }
+}
