@@ -46,14 +46,42 @@
     cursor: pointer;
 }
 
+.middle-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .middle-section {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    max-width: 50%;
 }
 
 .middle-section > * {
     margin: 5px 0;
+}
+
+.middle-section-image {
+    max-width: 40%;
+    display: flex;
+    align-self: center;
+}
+
+.aam-cover {
+    width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+    .middle-section {
+        max-width: 100%;
+    }
+
+    .middle-section-image {
+        max-width: 100%;
+    }
 }
 
 .lower-section {
